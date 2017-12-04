@@ -629,7 +629,8 @@ int msm_sensor_match_id(struct msm_sensor_ctrl_t *s_ctrl)
 #ifndef LETV_SUPPORT_DESIGNED_SENSOR
 		if (strncmp("imx230", sensor_name, 6) &&
 			strncmp("imx318", sensor_name, 6) &&
-			strncmp("imx298", sensor_name, 6)
+			strncmp("imx298", sensor_name, 6) &&
+		    	strncmp("imx298_ofilm_ak", sensor_name, 6)
 			) {
 			pr_err("%s:Err unknown sensor %s\n", __func__,
 				sensor_name);
